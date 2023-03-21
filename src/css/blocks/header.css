@@ -1,0 +1,43 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
+              0px 0px 2px rgba(0, 0, 0, 0.06), 
+              0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  padding-top: 6px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+
+  font-weight: 700;
+  font-size: 28px;
+
+  color: #333333;
+
+  text-decoration: none;
+}
+
+.header__button {
+  width: 260px;
+}
+
+.header__home {
+  font-weight: bold;
+  color: inherit;
+
+  text-decoration: none;
+}

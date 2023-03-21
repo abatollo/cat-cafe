@@ -1,0 +1,122 @@
+.features {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 50px;
+  padding-bottom: 80px;
+
+  background-color: #FFEEAD;
+
+  background-repeat: no-repeat;
+  background-image: url('../../assets/features-background-paw.svg'),
+                    url('../../assets/features-background-form.svg'),
+                    url('../../assets/features-background-leaf.svg');
+  background-position: top left,
+                      bottom left,
+                      bottom right;
+}
+
+.features__heading {
+  margin-top: 50px;
+  margin-bottom: 64px;
+
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  margin-top: 31px;
+  margin-bottom: 44px;
+}
+
+.features__item {
+  position: relative;
+
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  background-color: #FFFFFF;
+
+  border-radius: 12px;
+}
+
+.features__item-picture {
+  display: block;
+  grid-row: span 5;
+}
+
+.features__item-image {
+  display: block;
+}
+
+.features__item--newcomer::after {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+
+  text-transform: uppercase;
+
+  border-radius: 8px 8px 8px 0px;
+
+  background-color: #FFB334;
+
+  content: "New";
+}
+
+.features__item--gentle::after {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+
+  text-transform: uppercase;
+
+  border-radius: 8px 8px 8px 0px;
+
+  background-color: #7FC92E;
+
+  content: "Ласковый";
+}
+
+.features__item-heading {
+  margin-top: 20px;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.features__item-description {
+  margin-top: 24px;
+  margin-bottom: 0;
+
+  line-height: 27px;
+}
+
+.features__button {
+  align-self: center;
+}

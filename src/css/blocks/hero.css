@@ -1,0 +1,59 @@
+.hero {
+  background-color: #FFF6D9;
+}
+
+.hero__wrapper {
+  /* padding-top: 183px; */
+  padding-top: 145px;
+  /* padding-bottom: 183px; */
+  padding-bottom: 165px;
+
+  background-repeat: no-repeat;
+  background-position: center right 50px;
+  background-image: url("../../assets/hero.svg");
+}
+
+.hero__heading {
+  margin-top: 38px;
+  margin-bottom: 24px;
+  max-width: 60%;
+
+  line-height: 51px;
+  font-weight: 700;
+  font-size: 44px;
+
+  color: #333333;
+}
+
+.hero__description {
+  max-width: 48%;
+
+  line-height: 27px;
+}
+
+.hero__note {
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+
+  width: fit-content;
+
+  background-color: #FFEEAD;
+  border-radius: 8px;
+}
+
+.hero__location {
+  padding-left: 24px;
+
+  width: fit-content;
+
+  font-style: normal;
+
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-image: url("../../assets/icon-pin.svg");
+}

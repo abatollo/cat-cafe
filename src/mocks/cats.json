@@ -1,0 +1,29 @@
+[
+  {
+    "id": "lucky",
+    "image": "lucky",
+    "name": "Лаки",
+    "male": true,
+    "newcomer": true,
+    "gentle": false,
+    "description": "Крайне спокойный, ласковый малыш, который медленно, но уверенно перестаёт быть робким скромнягой"
+  },
+  {
+    "id": "basilio",
+    "image": "basilio",
+    "name": "Базилио",
+    "male": true,
+    "newcomer": false,
+    "gentle": false,
+    "description": "Прошлые хозяева отказались от него, и долгое время ему пришлось быть на передержке, привыкая к новой жизни"
+  },
+  {
+    "id": "sue",
+    "image": "sue",
+    "name": "Сью",
+    "male": false,
+    "newcomer": false,
+    "gentle": true,
+    "description": "Эта юная красавица очень общительная и ласковая уже с первого дня, как приехала в кафе"
+  }
+]
