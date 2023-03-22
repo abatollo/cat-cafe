@@ -1,5 +1,5 @@
 import { MainPage } from '../main-page/main-page';
-// import { OrderPage } from '../order-page/order-page';
+import { OrderPage } from '../order-page/order-page';
 import {
   BrowserRouter,
   Routes,
@@ -12,7 +12,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route index element={<MainPage />} />
-          {/* <Route path="/order" element={<OrderPage />} /> */}
+          <Route path="/order" element={<OrderPage />} />
         </Routes>
       </BrowserRouter>
     </>

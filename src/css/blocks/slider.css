@@ -1,0 +1,126 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 15px;
+  padding-bottom: 100px;
+
+  background-color: #FFEEAD;
+
+  background-repeat: no-repeat;
+  background-image: url('../../assets/slider-background-paw.svg'),
+                    url('../../assets/slider-background-form.svg'),
+                    url('../../assets/slider-background-leaf.svg');
+  background-position: top right,
+                      top right,
+                      bottom left;
+}
+
+.slider__header {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+  font-size: 44px;
+  color: #333333;
+}
+
+.slider__proper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 64px 1fr 64px;
+  column-gap: 30px;
+  row-gap: 24px;
+}
+
+.slider__picture {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.slider__image {
+  display: block;
+
+  border-radius: 20px;
+}
+
+.slider__control-button {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+
+  font-size: 0;
+
+  border-radius: 12px;
+}
+
+.slider__control-button-enum {
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+
+  background-color: #FF732B;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../../assets/icon-arrow.svg');
+}
+
+.slider__control-button-enum--fwd {
+  transform: rotate(180deg);
+}
+
+.slider__control-list {
+  display: flex;
+
+  gap: 20px;
+}
+
+.slider__control-item {
+  display: block;
+}
+
+.slider__control-label {
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.slider__control-picture {
+  position: relative;
+
+  display: flex;
+}
+
+.slider__control-picture::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  border-radius: 12px;
+
+  content: "";
+}
+
+.slider__control-radio:checked + .slider__control-label .slider__control-picture::after {
+  content: none;
+}
+
+.slider__control-radio:focus + .slider__control-label {
+  outline: medium auto Highlight;
+  outline: medium auto -webkit-focus-ring-color;
+}
+
+.slider__control-image {
+  border-radius: 12px;
+}
