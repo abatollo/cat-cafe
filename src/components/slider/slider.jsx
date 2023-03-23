@@ -1,33 +1,6 @@
 import { useState } from "react";
 
-const slides = [
-  {
-    id: 0,
-    image: "slide-0",
-    thumbnail: "slide-0-thumbnail",
-    alt: ""
-  },
-  {
-    id: 1,
-    image: "slide-1",
-    thumbnail: "slide-1-thumbnail",
-    alt: ""
-  },
-  {
-    id: 2,
-    image: "slide-2",
-    thumbnail: "slide-2-thumbnail",
-    alt: ""
-  },
-  {
-    id: 3,
-    image: "slide-3",
-    thumbnail: "slide-3-thumbnail",
-    alt: ""
-  }
-];
-
-const Slider = () => {
+const Slider = ({ slides }) => {
   const [slideNumber, setSlideNumber] = useState(slides[0].id);
 
   const onSliderControlButtonEnumClick = () => {
@@ -58,8 +31,8 @@ const Slider = () => {
           <picture className="slider__picture">
             {/* <source srcSet={`img/slides/slide-${ slideNumber }.avif 1x, img/slides/slide-${ slideNumber }@2x.avif 2x, img/slides/slide-${ slideNumber }@3x.avif 3x, img/slides/slide-${ slideNumber }@4x.avif 4x`} type="image/avif" />
             <source srcSet={`img/slides/slide-${ slideNumber }.webp 1x, img/slides/slide-${ slideNumber }@2x.webp 2x, img/slides/slide-${ slideNumber }@3x.webp 3x, img/slides/slide-${ slideNumber }@4x.webp 4x`} type="image/webp" /> */}
-            {/* <img className="slider__image" src={ `img/slides/slide-${ slideNumber }.jpg` } srcSet={`img/slides/slide-${ slideNumber }.jpg 1x, img/slides/slide-${ slideNumber }@2x.jpg 2x, img/slides/slide-${ slideNumber }@3x.jpg 3x, img/slides/slide-${ slideNumber }@4x.jpg 4x`} width="726" height="408" alt="" /> */}
-            <img className="slider__image" src={ `img/slides/slide-${ slideNumber }.jpg` } width="726" height="408" alt="" />
+            {/* <img className="slider__image" src={ `img/slides/slide-${ slideNumber }.jpg` } srcSet={`img/slides/slide-${ slideNumber }.jpg 1x, img/slides/slide-${ slideNumber }@2x.jpg 2x, img/slides/slide-${ slideNumber }@3x.jpg 3x, img/slides/slide-${ slideNumber }@4x.jpg 4x`} width="726" height="408" alt={ slides[slideNumber].alt } /> */}
+            <img className="slider__image" src={ `img/slides/slide-${ slideNumber }.jpg` } width="726" height="408" alt={ slides[slideNumber].alt } />
           </picture>
         <button className="slider__control-button-enum slider__control-button" type="button" onClick={onSliderControlButtonEnumClick}>Назад</button>
         <form>

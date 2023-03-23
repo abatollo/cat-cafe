@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "image": "slide-0",
+    "thumbnail": "slide-0-thumbnail",
+    "alt": "Девушки сидя за столом гладят сидящего на коленях кота"
+  },
+  {
+    "id": 1,
+    "image": "slide-1",
+    "thumbnail": "slide-1-thumbnail",
+    "alt": "Девушки сидя за столом гладят лежащих на коленях котов"
+  },
+  {
+    "id": 2,
+    "image": "slide-2",
+    "thumbnail": "slide-2-thumbnail",
+    "alt": "Коты отдыхают лежа на столах"
+  },
+  {
+    "id": 3,
+    "image": "slide-3",
+    "thumbnail": "slide-3-thumbnail",
+    "alt": "Кот сидит на специальном сидении для котов"
+  }
+]

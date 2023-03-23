@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 @import "global/variables.css";
 @import "global/body.css";
 @import "global/visually-hidden.css";
@@ -6,4 +8,5 @@
 @import "blocks/hero.css";
 @import "blocks/features.css";
 @import "blocks/slider.css";
+@import "blocks/shop.css";
 @import "blocks/footer.css";

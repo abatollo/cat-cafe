@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 
-import { Slider } from '../slider/slider';
-// import { Shop } from '../shop/shop';
-import { Footer } from '../footer/footer';
 import { Header } from '../header/header';
+import { Slider } from '../slider/slider';
+import { Shop } from '../shop/shop';
+import { Footer } from '../footer/footer';
+
+import slides from '../../mocks/slides.json';
+import ticketTypes from '../../mocks/ticket-types.json';
 
 const OrderPage = () => {
   return (
@@ -13,8 +16,8 @@ const OrderPage = () => {
           Главная
         </Link>
       </Header>
-      <Slider />
-      {/* <Shop /> */}
+      <Slider slides={ slides } />
+      <Shop ticketTypes={ticketTypes} />
       <Footer />
     </>
   );
