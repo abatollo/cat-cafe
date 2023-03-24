@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import { Header } from '../header/header';
 import { Slider } from '../slider/slider';
-import { Shop } from '../shop/shop';
+import Shop from '../shop/shop';
 import { Footer } from '../footer/footer';
 
 import slides from '../../mocks/slides.json';

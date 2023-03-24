@@ -32,8 +32,18 @@
   font-size: 18px;
 }
 
+.shop__smallheading {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.shop__price {
+  margin-bottom: 40px;
+}
+
 .shop__button {
   width: 100%;
+  border: 0;
 }
 
 .shop__list {
@@ -52,6 +62,8 @@
 
   background-color: #F7F7F7;
   border-radius: 8px;
+
+  cursor: pointer;
 }
 
 .shop__input:checked + .shop__label {
@@ -63,4 +75,126 @@
 .shop__input:focus + .shop__label {
   outline: medium auto Highlight;
   outline: medium auto -webkit-focus-ring-color;
+}
+
+.shop__type-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.shop__type-item {
+  background-color: #F7F7F7;
+
+  border-radius: 10px;
+}
+
+.shop__type-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop__type-label {
+  position: relative;
+
+  display: flex;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 50px;
+
+  font-size: 18px;
+
+  flex-grow: 1;
+}
+
+.shop__type-label::before {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  border: 1px solid #FF732B;
+  border-radius: 50%;
+
+  content: "";
+}
+
+.shop__type-input:checked + .shop__type-label::after {
+  position: absolute;
+  top: 19px;
+  left: 24px;
+
+  display: block;
+  width: 12px;
+  height: 12px;
+
+  background-color: #FF732B;
+  border-radius: 50%;
+
+  content: "";
+}
+
+.shop__type-input:focus + .shop__type-label {
+  outline: medium auto Highlight;
+  outline: medium auto -webkit-focus-ring-color;
+}
+
+.shop__type-checkbox-label {
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 16px;
+  height: 16px;
+
+  font-size: 0;
+
+  background-image: url("../../assets/icon-dropdown.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.shop__type-checkbox:checked + .shop__type-checkbox-label {
+  transform: rotate(180deg);
+}
+
+.shop__type-checkbox:focus + .shop__type-checkbox-label {
+  outline: medium auto Highlight;
+  outline: medium auto -webkit-focus-ring-color;
+}
+
+.shop__type-sublist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  list-style-type: none;
+}
+
+.shop__type-sublist-item {
+  display: flex;
+  align-items: center;
+}
+
+.shop__type-sublist-item::before {
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+
+  background-color: #333333;
+  border-radius: 50%;
+
+  content: "";
 }

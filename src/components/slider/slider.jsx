@@ -26,7 +26,7 @@ const Slider = ({ slides }) => {
   return (
     <section className="slider">
       <div className="slider__wrapper container center">
-      <h2 className="slider__header center">Галерея нашего кафе</h2>
+      <h1 className="slider__header center">Галерея нашего кафе</h1>
       <div className="slider__proper">
           <picture className="slider__picture">
             {/* <source srcSet={`img/slides/slide-${ slideNumber }.avif 1x, img/slides/slide-${ slideNumber }@2x.avif 2x, img/slides/slide-${ slideNumber }@3x.avif 3x, img/slides/slide-${ slideNumber }@4x.avif 4x`} type="image/avif" />
