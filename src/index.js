@@ -1,25 +1,11 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import { legacy_createStore as createStore} from 'redux';
-import { Provider } from 'react-redux';
-import { composeWithDevTools } from '@redux-devtools/extension';
 
-import { App } from './components/app/app';
-
-import { reducer } from './store/reducer';
-
-import './css/style.css';
-
-const store = createStore(
-  reducer,
-  composeWithDevTools()
-);
+import App from './components/app/app';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Provider store={store} >
-      <App />
-    </Provider>
-  </React.StrictMode>
+  <StrictMode>
+    <App />
+  </StrictMode>
 );
