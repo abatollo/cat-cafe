@@ -2,11 +2,13 @@ import React from "react";
 import Title, { TitleSize } from "../../ui/title/title";
 import "./style.css";
 
-function About() {
+function About({ level }) {
   return (
     <section className="about">
       <div className="about__wrapper">
-        <Title size={TitleSize.BIG}>Первое в России котокафе</Title>
+        <Title size={TitleSize.BIG} title={level}>
+          Первое в России котокафе
+        </Title>
         <p className="about__text">
           Крупнейшее котокафе России, в котором живёт 50 кошек и котов, и каждый
           из них ищет новый дом. Животных можно гладить, фотографировать, играть
