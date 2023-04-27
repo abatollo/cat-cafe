@@ -3,7 +3,7 @@ import Title, { TitleLevel, TitleSize } from "../../ui/title/title";
 import { Address, Text, StyledSection, WorkTime, TextWrapper } from "./styles";
 
 // Раздел о «Котокафе»
-function About() {
+function About({ level }) {
   return (
     <StyledSection>
       <TextWrapper>

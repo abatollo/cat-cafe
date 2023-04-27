@@ -1,7 +1,6 @@
 import React from "react";
 import Title, { TitleSize, TitleLevel } from "../../ui/title/title";
-import StarIcon from "../star-icon/star-icon";
-import "./style.css";
+import { Text, Figure, Image, StyledStarCard, StyledStarIcon } from "./styles";
 
 function StarCard({
   name, // имя кота
@@ -10,25 +9,19 @@ function StarCard({
   image // url c фото кота
 }) {
   return (
-    <article className="star-card">
-      <figure className="star-card__figure">
-        <img
-          src={image}
-          className="star-card__image"
-          width={313}
-          height={320}
-          alt="изображение кота"
-        />
-        <StarIcon className="star-card__icon" feature={feature} />
-      </figure>
-      <Title size={TitleSize.SMALL} level={TitleLevel.H3}>
+    <StyledStarCard>
+      <Figure>
+        <Image src={image} width={313} height={320} alt="изображение кота" />
+        <StyledStarIcon feature={feature} />
+      </Figure>
+      <Title level={TitleLevel.H3} size={TitleSize.SMALL}>
         {name}
       </Title>
-      <p
-        className="star-card__text"
+      <Text
+        className="star__about"
         dangerouslySetInnerHTML={{ __html: about }}
       />
-    </article>
+    </StyledStarCard>
   );
 }
 

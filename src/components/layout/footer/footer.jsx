@@ -1,14 +1,16 @@
 import React from "react";
 import Logo from "../../ui/logo/logo";
-import "./style.css";
+import { StyledSection, Copyright } from "./styles";
 
+// подвал сайта
 function Footer() {
   return (
-    <footer className="footer">
+    <StyledSection as="footer">
       <Logo />
-      <span className="footer__copyright">Создано 2021</span>
-    </footer>
+      <Copyright>Создано 2021</Copyright>
+    </StyledSection>
   );
 }
 
 export default Footer;
+
