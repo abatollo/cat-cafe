@@ -1,9 +1,8 @@
 import React from "react";
 import Header from "../header/header";
 import Footer from "../footer/footer";
-// import MainPage from "../../pages/main-page/main-page";
-import BuyPage from "../../pages/buy-page/buy-page";
 import { Main } from "./styles";
+import { Outlet } from "react-router-dom";
 
 // Обёртка для контента страниц
 function PageWrapper({ ...prop }) {
@@ -11,7 +10,7 @@ function PageWrapper({ ...prop }) {
     <>
       <Header />
       <Main>
-        <BuyPage {...prop} />
+        <Outlet />
       </Main>
       <Footer />
     </>
