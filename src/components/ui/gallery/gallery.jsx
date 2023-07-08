@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { SwiperSlide } from "swiper/react";
-import { Navigation, Thumbs } from "swiper";
-import "swiper/swiper.css";
+import { Navigation, Thumbs } from "swiper/modules";
+import "swiper/css";
 import { ReactComponent as LeftArrow } from "../../../assets/left-arrow.svg";
 
 import {
