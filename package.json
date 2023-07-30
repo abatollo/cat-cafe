@@ -1,6 +1,6 @@
 {
   "name": "cat-cafe",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
